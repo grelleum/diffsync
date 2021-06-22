@@ -28,8 +28,8 @@ class LocalAdapter(DiffSync):
     def load(self, filename=COUNTRIES_FILE):
         """Load all regions and countries from a local JSON file."""
 
-        data_file = open(filename, "r")
-        countries = json.loads(data_file.read())
+        with open(filename, "r") as data_file:
+            countries = json.load(data_file)
 
         # Load all regions first
         # A Region object will be created for each region and it will be stored inside the adapter with self.add()
