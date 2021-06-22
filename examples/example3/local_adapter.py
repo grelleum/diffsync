@@ -14,9 +14,9 @@ class LocalAdapter(DiffSync):
     region = Region
     country = Country
 
-    # Since all countries are associated with a region, we don't need to list country here
     # When doing a diff or a sync between 2 adapters,
-    #  diffsync will recursively check all models defined at the top level and their children.
+    #  DiffSync will recursively check all models defined at the top level and their children.
+    # Since our data model defines countries as children of a region, we don't need to list country here
     top_level = ["region"]
 
     # Human readable name of the Adapter,
