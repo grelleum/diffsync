@@ -1,7 +1,7 @@
 
 # Example 3
 
-This is a simple example to show how DiffSync can be used to compare and synchronize data with a remote system like via a REST API like Nautobot.
+This is a simple example to show how DiffSync can be used to compare and synchronize data with a remote system like [Nautobot](https://nautobot.readthedocs.io) via a REST API.
 
 For this example, we have a shared model for Region and Country defined in `models.py`.
 A Country must be associated with a Region and can be part of a Subregion too.
@@ -29,4 +29,3 @@ main.py --diff
 ### SYNC Update the list of country in Nautobot.
 main.py --sync
 ```
-
