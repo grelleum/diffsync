@@ -41,7 +41,7 @@ class NautobotCountry(Country):
             NautobotCountry: DiffSync object newly created
         """
 
-        # Retrieve the parent region in internal cache to access its UUID
+        # Retrieve the parent region from the adapter's internal cache to access its UUID
         #  because the UUID is required to associate the object to its parent region in Nautobot
         region = diffsync.get(diffsync.region, attrs.get("region"))
 
