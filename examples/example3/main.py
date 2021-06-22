@@ -2,7 +2,6 @@
 """Main executable for DiffSync "example3"."""
 import sys
 import argparse
-import pprint
 
 from diffsync import Diff
 from diffsync.logging import enable_console_logging
